@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with JavaMingle - your local coffee shop.">
+    <meta property="og:title" content="JavaMingle - Contact">
+    <meta property="og:description" content="Reach out to us for inquiries or feedback.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxjb250YWN0fGVufDB8MHx8fDE3NjExMDg4NTl8MA&ixlib=rb-4.1.0&q=80&w=1080">
+    <title>JavaMingle - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B4513',
+                        secondary: '#CD853F',
+                        accent: '#FFD700'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-neutral-900">JavaMingle</a>
+            <nav class="hidden md:flex gap-8">
+                <a href="index.html" class="text-neutral-700 hover:text-primary">Home</a>
+                <a href="about.html" class="text-neutral-700 hover:text-primary">About</a>
+                <a href="menu.html" class="text-neutral-700 hover:text-primary">Our Menu</a>
+                <a href="contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+            </nav>
+            <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:scale-105">Get Started</a>
+            <div class="block md:hidden"> <!-- Hamburger Menu Icon --> </div>
+        </div>
+    </header>
+    <main class="mt-[80px] py-16 px-8 bg-neutral-100">
+        <!-- Contact Details Section -->
+        <section class="flex flex-col md:flex-row items-start py-16 px-8 bg-neutral-100">
+            <div class="w-full h-64 md:w-1/2 rounded-lg mb-6 md:mb-0 shadow-md">
+                <!-- Embed map here -->
+                <img src="https://pixabay.com/get/g67fea2508b7c89a636330e1c5f718371489f658ce86ffcf8425891802fc84743e9bf4a80ee40ed1873ac03b1c2bb161e_640.jpg" alt="Location map of JavaMingle" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="w-full md:w-1/2 bg-white rounded-lg p-6 shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-semibold text-neutral-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border-2 border-neutral-300 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all duration-300" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-semibold text-neutral-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border-2 border-neutral-300 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all duration-300" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-semibold text-neutral-700 mb-2">Message</label>
+                        <textarea id="message" name="message" class="w-full px-4 py-3 border-2 border-neutral-300 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none transition-all duration-300 min-h-32" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition-colors">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-neutral-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <h3 class="font-bold">JavaMingle</h3>
+                <p>Connecting coffee lovers one cup at a time.</p>
+            </div>
+            <!-- Repeat for other footer columns -->
+        </div>
+    </footer>
+</body>
+</html>
