@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about JavaMingle's story and our passionate team.">
+    <meta property="og:title" content="JavaMingle - About Us">
+    <meta property="og:description" content="Discover our journey and meet the team behind JavaMingle.">
+    <meta property="og:image" content="https://images.pexels.com/photos/161887/santiago-calatrava-architecture-design-building-161887.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    <title>JavaMingle - About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B4513',
+                        secondary: '#CD853F',
+                        accent: '#FFD700'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-neutral-900">JavaMingle</a>
+            <nav class="hidden md:flex gap-8">
+                <a href="index.html" class="text-neutral-700 hover:text-primary">Home</a>
+                <a href="about.html" class="text-neutral-700 hover:text-primary">About</a>
+                <a href="menu.html" class="text-neutral-700 hover:text-primary">Our Menu</a>
+                <a href="contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+            </nav>
+            <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:scale-105">Get Started</a>
+            <div class="block md:hidden"> <!-- Hamburger Menu Icon --> </div>
+        </div>
+    </header>
+    <main class="mt-[80px] py-20 px-8">
+        <!-- Story Section -->
+        <section class="flex flex-col md:flex-row items-start gap-8 py-20 px-8">
+            <img src="https://images.pexels.com/photos/34369087/pexels-photo-34369087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="w-full md:w-1/2 rounded-xl mb-6 md:mb-0" alt="Our Story">
+            <div class="w-full md:w-1/2 text-lg text-neutral-700">
+                <h1 class="text-4xl font-bold mb-4">Our Story</h1>
+                <p>Founded in 2020, JavaMingle was born out of a passion for coffee and community. We strive to create a welcoming environment where everyone can enjoy a great cup of coffee and connect with others.</p>
+            </div>
+        </section>
+        <!-- Team Section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 py-12 px-6">
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <img src="https://images.pexels.com/photos/8467931/pexels-photo-8467931.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="w-24 h-24 mx-auto rounded-full mb-4" alt="Team Member">
+                <h2 class="text-xl font-semibold">Jane Smith</h2>
+                <p class="text-base text-neutral-600">Founder &amp; Head Barista</p>
+            </div>
+            <!-- Repeat for other team members -->
+        </section>
+    </main>
+    <footer class="bg-neutral-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <h3 class="font-bold">JavaMingle</h3>
+                <p>Connecting coffee lovers one cup at a time.</p>
+            </div>
+            <!-- Repeat for other footer columns -->
+        </div>
+    </footer>
+</body>
+</html>
