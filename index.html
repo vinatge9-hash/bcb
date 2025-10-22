@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to JavaMingle - Your local coffee haven.">
+    <meta property="og:title" content="JavaMingle">
+    <meta property="og:description" content="Discover our unique coffee blends and cozy atmosphere.">
+    <meta property="og:image" content="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw4fHxoZXJvJTIwYmFja2dyb3VuZHxlbnwwfDB8fHwxNzYxMTA4ODUxfDA&ixlib=rb-4.1.0&q=80&w=1080">
+    <title>JavaMingle - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B4513',
+                        secondary: '#CD853F',
+                        accent: '#FFD700'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body">
+    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-neutral-900">JavaMingle</a>
+            <nav class="hidden md:flex gap-8">
+                <a href="index.html" class="text-neutral-700 hover:text-primary">Home</a>
+                <a href="about.html" class="text-neutral-700 hover:text-primary">About</a>
+                <a href="menu.html" class="text-neutral-700 hover:text-primary">Our Menu</a>
+                <a href="contact.html" class="text-neutral-700 hover:text-primary">Contact</a>
+            </nav>
+            <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:scale-105">Get Started</a>
+            <div class="block md:hidden"> <!-- Hamburger Menu Icon --> </div>
+        </div>
+    </header>
+    <main class="mt-[80px]">
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://pixabay.com/get/g273b8f9ae7cdb72365a98a5e1fab4d1f17d9b43640ad625ea01c5dff4bea29c973ff4fbecad379861b6426c0c14dbc276338cbe526e8bdd71e7c8e8eab645df8_640.jpg" class="w-full h-full object-cover" alt="Hero background">
+                <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/80 to-neutral-900/40"></div>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Welcome to JavaMingle</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8">The perfect place to enjoy a cup of coffee and connect with others.</p>
+                <a href="#contact" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-10 py-4 rounded-full font-semibold text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300">Get Started</a>
+            </div>
+        </section>
+        <!-- Featured Offers Section -->
+        <section class="py-24 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                <img src="https://images.pexels.com/photos/5816286/pexels-photo-5816286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="rounded-t-2xl w-full mb-4" alt="Featured Offer 1">
+                <h2 class="text-xl font-semibold text-neutral-800 mb-2">Special Blend</h2>
+                <p class="text-base text-neutral-600 mb-4">Experience our unique special blend, crafted with the finest beans.</p>
+                <a href="#" class="text-primary underline hover:text-secondary transition-all duration-300">Learn More</a>
+            </div>
+            <!-- Repeat for other offers -->
+        </section>
+        <!-- Testimonials Section -->
+        <section class="py-16 bg-neutral-100">
+            <div class="flex overflow-x-scroll snap-x snap-mandatory px-6">
+                <div class="snap-center flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                        <img src="https://pixabay.com/get/g689ab07a00bb8d22f5f192e8e5c31d04de69fe2cc3fe06bf9fb53dfa7aa78e4e5e7d9e798859a724137693ddd3aedf09272e9a681c18a39c4bcfeee6aa791101_640.jpg" class="w-16 h-16 rounded-full mb-4" alt="Customer Photo">
+                        <blockquote class="text-neutral-800 italic text-center mb-4">"Best coffee shop in town, with a cozy atmosphere!"</blockquote>
+                        <span class="font-semibold text-neutral-700">John Doe</span>
+                    </div>
+                </div>
+                <!-- Repeat for other testimonials -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-neutral-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <h3 class="font-bold">JavaMingle</h3>
+                <p>Connecting coffee lovers one cup at a time.</p>
+            </div>
+            <!-- Repeat for other footer columns -->
+        </div>
+    </footer>
+</body>
+</html>
